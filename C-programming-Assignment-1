@@ -1,0 +1,130 @@
+\\ Question.1
+
+#include <stdio.h>
+int main() {
+int num;
+printf("Enter any Number:");
+scanf("%d",&num);
+if (num%2==0)
+{
+printf("%d is even",num);
+}
+else{
+printf("%d is odd",num);
+}
+return 0;
+}
+// Output -
+Enter any Number : 58
+58 is even
+
+// Question.2
+
+#include <stdio.h>
+int main() {
+int age;
+printf("Enter your Age to check your Eligibility For Voting and Driving:\n");
+scanf("%d",&age);
+if (age>=18)
+{
+printf("Adult: Eligible For Voting and Driving");
+}
+else if (age>12 )
+{
+printf("Teenager:Not Eligible  For Voting and Driving");
+}
+else if (age<12)
+{
+printf("Children:  Not Eligible  For Voting and   Driving.\n You are too small play with Toys 😅");
+}
+else{
+printf("Invalid Input!");
+}
+return 0;
+}
+ Output - 
+Enter your Age to check your Eligibility For Voting and Driving:24
+Adult Eligible for voting and Driving 
+
+// Question.3
+
+#include <stdio.h>
+int main() {
+float a, b, c;
+printf("Enter value of a:");
+scanf("%f", &a);
+printf("Enter value of b:");
+scanf("%f", &b);
+printf("Enter value of c:");
+scanf("%f", &c);
+ if (a > b && a> c)
+{
+printf("%f is the greatest\n", a);
+}
+else if (b> a && b >c)
+{
+printf("%f is the greatest\n", b);
+}
+else
+{
+printf("%f is the greatest\n",c);
+}
+return 0;
+}
+ 
+Output -
+Enter value of a:13
+Enter value of b:14
+Enter value of c:18
+18.000000 is the greatest
+
+//Question.4
+
+#include<stdio.h>
+int main(){
+int a,retry;
+do {
+printf("Enter Password :");
+scanf("%d",&a);
+if (a==1234)
+{
+printf("Welcome");
+}
+else
+printf("Wrong Password  Press 1 to retry");
+scanf("%d",&retry);
+}
+while (retry=1);
+
+return 0;
+}
+Output -
+Enter Password :2362
+Wrong Password  Press 1 to retry1
+Enter Password :1234
+Welcome
+
+// Question.5
+
+#include <stdio.h>
+int main() {
+ int n;
+ printf("Enter any Number :");
+ scanf("%d",&n);
+ for(int i=1;i<=10;i++){
+ printf("%d*%d=%d\n",n,i,n*i);
+}
+ return 0;
+}
+Output -
+Enter any Number :15
+15*1=15
+15*2=30
+15*3=45
+15*4=60
+15*5=75
+15*6=90
+15*7=105
+15*8=120
+15*9=135
+15*10=150
